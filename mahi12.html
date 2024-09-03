@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>smart education</title>
+        <style>
+            #form
+            {
+                display: flex;  
+                justify-content: center;
+                padding: 150px;
+                border: 5px solid black;
+                box-sizing: content-box;
+                height: 200px;
+                width: 200px;    
+               background-color:cadetblue;
+            }
+            #formm
+            {
+                display: flex;
+                justify-content: center;
+                padding: 100px;
+                background-color: bisque;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="formm">
+        <div id="form">
+        <form onsubmit="return valid()" action="index.html">
+            <input type="username" placeholder="username" id="username"><br><br>
+          <input type="password" placeholder="password" id="password"><br><br>
+         <input type="submit" value="submit">
+        </form>
+        </div>
+        </div>
+    </body>
+    <script>
+        function valid(){
+        var a=document.getElementById("username").value;
+        var b=document.getElementById("password").value;
+        if(a=="mahidargopu@gmail.com" && b=="12345"){
+               document.getElementById("sp").value="false"
+        }
+        else{
+            return false;
+        }
+    }
+    </script>
+</html>
